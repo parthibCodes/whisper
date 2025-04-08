@@ -12,6 +12,20 @@ A full-stack web application that allows users to share anonymous messages in a 
 - MongoDB backend with Express server
 - React frontend with TypeScript
 
+## Message Visibility and Anonymity
+
+- All messages are publicly visible to anyone who accesses the application
+- No authentication required - completely anonymous posting and viewing
+- Messages can be viewed through:
+  - The web interface (http://localhost:4000)
+  - Direct API access (http://localhost:5001/api/messages)
+- Messages are only identified by:
+  - Creation timestamp
+  - Vote count
+  - No user information is stored or displayed
+- Note: When running locally, only users on your local network can access the messages
+- For public access, the application needs to be deployed to a public server
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
